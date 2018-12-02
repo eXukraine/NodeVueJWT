@@ -1,10 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const DB = require('../server/config/key')
 const user = require('../server/routes/user')
 
 
-mongoose.connect('mongodb://localhost:27017/jwtauth', { useNewUrlParser: true })
+mongoose.connect(DB, { useNewUrlParser: true })
 .then(() => console.log('MongoDB conected...'))
 .catch(err => console.log(err));
 

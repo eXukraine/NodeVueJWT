@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Login from '../views/Login'
 import home from '../views/home'
 import schedule from '../views/schedule'
+import registration from '../views/Registration'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
        name: 'schedule',
        component: schedule
       
+    },
+    {
+      path: '/registration',
+      name: 'registration',
+      component: registration
     }
 
 

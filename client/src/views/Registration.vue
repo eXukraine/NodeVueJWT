@@ -33,10 +33,10 @@ export default {
                     email: useremail,    
                     password: userpassword    
                 }    
-                axios.post("/user/signin", data)    
+                axios.post("/user/signup", data)    
                     .then((response) => {    
-                        console.log("Logged in")    
-                        router.push("/schedule")    
+                            
+                        router.push("/login")    
                     })    
                     .catch((errors) => {    
                         console.log("Cannot log in")    

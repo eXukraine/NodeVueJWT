@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "pm2 start ecosystem.config.js --no-daemon",
+    "server": "pm2 start ecosystem.config.js --no-daemon ",
     "client": "npm run serve --prefix client",
-    "dev": "concurrently  \"npm run server\" \"npm run client\" --kill-others"
+    "dev": "concurrently  \"npm run server\" \"npm run client\" --kill-others "
   },
   "keywords": [],
   "author": "",
